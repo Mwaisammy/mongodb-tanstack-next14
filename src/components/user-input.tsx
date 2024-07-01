@@ -59,16 +59,19 @@ function UserInput({}: Props) {
     <div>
       {" "}
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8 bg-white p-7 w-[510px] rounded-md "
+        >
           <FormField
             control={form.control}
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel>Todo Form MongoDB</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="shadcn"
+                    placeholder="Enter a todo..."
                     {...field}
                     disabled={isPending || isLoading}
                   />

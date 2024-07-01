@@ -25,7 +25,7 @@ function UserName({ item }: Props) {
     });
   };
   return (
-    <div className="flex items-center justify-between mt-5 space-x-3 bg-stone-600 text-white max-w-2xl">
+    <div className="flex items-center justify-between mt-5 space-x-3 bg-orange-400 text-white p-5 w-full max-w-lg rounded-md">
       <h3>{item.username}</h3>
 
       <div className="flex space-x-3 items-center">
